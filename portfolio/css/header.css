@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;1,300&display=swap');
+html, body{
+    width: 100%;
+    height: 100%;
+    background: rgb(7, 0, 20);
+
+}
+
+header#nav{
+    width: 100%;
+    height: 4.25vw;
+    background: rgba(0,0,0, 0.75);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    transition: top 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.15vw solid rgb(252, 30, 233);
+}
+
+header#nav.hide{
+    top: -4.25vw;
+    background: rgba(0,0,0, 0.5);
+}
+
+img#logo {
+    width: 5.5%;
+    height: 85%;
+    margin-left: 1%;
+}
+
+ul#HeaderList{
+    padding: 0;
+    margin-left: 2%;
+    width: 75%;
+    height: fit-content;
+    list-style: none;
+    display: flex;
+    flex-direction: row; /* Pour mettre horizontalement */
+    justify-content: space-around;
+}
+
+ul#HeaderList li{
+    /*background-color: violet;*/
+    margin: 0;
+    font-family: 'Prompt', 'Inter';
+    font-size: 1.45vw;
+}
+
+ul#HeaderList li a {
+    text-decoration: none;
+    color: rgba(241, 241, 241, 0.76);
+    padding: 0.1vw 0.4vw;
+}
+
+ul#HeaderList li a#selected{
+    text-decoration: none;
+    border: 0.15vw solid black;
+    border-radius: 0.55vw;
+}
+
+
+div#mainIcon{
+    width: 7.5%;
+    height: 50%;
+    margin: 0 1.5% 0 auto; /* Aiguille d'une montre */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+div#mainIcon div{
+    height: 100%;
+    width: 45%;
+}
+
+div#mainIcon div img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+/*---------- video ----------*/
+
+video#bgvideo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    top: 0;
+}
+
+div.test{
+    width: 1px;
+    height: 200vh;
+}
+
+
