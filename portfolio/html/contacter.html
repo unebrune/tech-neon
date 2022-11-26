@@ -12,6 +12,22 @@
 </head>
 <body>
     <header id="nav" data-index="5"></header>
+    <form action="../php/message.php" method="POST">
+        <div>
+            <label>
+                Email
+            </label>
+            <input type="email" id="email" name="email" placeholder="email" required />
+        </div>
+        <div>
+            <label>
+                Message
+            </label>
+            <textarea name="message" id="message" placeholder="entrez votre message" required>
+            </textarea>
+        </div>
+        <button type="submit">Envoyer</button>
+    </form>
 </body>
 <script src="../js/header.js"></script>
 </html>
